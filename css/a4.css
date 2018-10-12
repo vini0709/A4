@@ -1,0 +1,110 @@
+/*
+        File: /~vvpatel/public_html/A2/css/a4.css
+        91.461 GUI Programming I  Assignment# 4:  Styling First Web Page With CSS
+        Vinishaben Patel, Umass Lowell Computer Science, Vinishaben_Patel@student.uml.edu
+        Copyright (c) 2018 by Vinishaben Patel. All rights reserved.
+        updated by VP on October 09, 2018 at 8:00 PM
+        Description:  Created this external css file to style and design First Web Page
+*/
+
+html {
+  height: 100%;
+  min-width: 992px;
+}
+
+body{
+  font-family:Arial, Helvetica, sans-serif;
+  line-height:1em;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  position: fixed;    /* to keep body position fix when resize window */
+  text-align: center;
+}
+
+.container{
+  width:80%;
+  overflow:hidden;
+  margin: auto;
+}
+
+header{
+  background-color:coral;
+  color:#fff;
+}
+
+#navbar{
+  background-color:#333;
+  color:#fff;
+  text-align: left;
+}
+
+h4, h5 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+table.container {
+  margin-top: 50px;           /* to give margin to table */
+  border-collapse: collapse;  /* to remove space between table data */
+  font-weight: bold;
+  color : #003300;
+  background-color:rgba(192,192,192,0.4);     /*color with opacity for transparent background */
+}
+
+tr, th, td {
+  border: solid 3px coral;
+  padding: 15px;
+  text-align: center;
+  list-style: none;        /* to remove list bullets */
+}
+
+th {
+  font-size: 25px;        /* to make font larger in table header than table data */
+  color: black;
+}
+
+a {
+  color : #003300;
+}
+
+a:hover {
+  color:green;
+}
+
+#main {
+  height: 80%;
+  width: 100%;
+  min-width: 400px;
+  background-image:url('../images/web.jpg');    /* background */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+footer{
+  background: #333;
+  color:#fff;
+  text-align: center;     /* to align text in center */
+  padding: 1px;
+  width: 100%;
+  position: fixed;        /* to keep footer position fix when resize window */
+  bottom: 0;
+}
+
+footer a {
+  color: white;
+}
+
+img {
+	float: left;
+	margin-top: 20px;
+}
+
+@media(min-width:992px){        /* responsive web on different media */
+    body, header, table {
+  	width: 100%;
+    font-size: 20px;
+    float: none;
+  }
+}
